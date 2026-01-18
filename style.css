@@ -40,3 +40,21 @@ nav a:hover {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(0,0,0,0
+/* تصاویر کا سائز درست کرنے کے لیے */
+#portfolio img {
+    width: 300px;         /* تصویر کی چوڑائی */
+    height: 200px;        /* تصویر کی اونچائی */
+    object-fit: cover;    /* تصویر کھینچے گی نہیں بلکہ کٹ کر فٹ ہو جائے گی */
+    border-radius: 10px;  /* کونوں کو گول کرنے کے لیے */
+    margin: 10px;         /* تصویروں کے درمیان فاصلہ */
+    border: 2px solid #ddd; /* ہلکا سا بارڈر */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* تھوڑا سا سایہ (Shadow) */
+}
+
+/* تصاویر کو ایک لائن میں لانے کے لیے */
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
